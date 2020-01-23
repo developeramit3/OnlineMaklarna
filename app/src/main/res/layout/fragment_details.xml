@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_2"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/bg_straight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" $ 5.600/mo"
+            android:textSize="20sp"
+            android:textColor="@color/Black">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" $ 5.600/mo"
+            android:textSize="15sp"
+            android:layout_marginStart="@dimen/margin_20"
+            android:background="@drawable/divider"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="@dimen/margin_20">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/bg_straight"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_below="@id/ly1">
+
+        <ImageView
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:src="@drawable/beth"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/margin_10">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/Black"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/bathroom"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/Black"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/blue_home"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,00 Sqft"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:layout_marginLeft="@dimen/margin_8">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_straight"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="Guest Room : "
+            android:textSize="15sp"
+            android:layout_weight=".5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="@dimen/margin_10">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="15sp"
+            android:layout_weight=".5"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:textColor="@color/Black"
+            android:layout_marginRight="@dimen/margin_10">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_straight"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="Maid Room : "
+            android:textSize="15sp"
+            android:layout_weight=".5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="@dimen/margin_10">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="15sp"
+            android:layout_weight=".5"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:textColor="@color/Black"
+            android:layout_marginRight="@dimen/margin_10">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_straight"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="Ladies Setting area : "
+            android:textSize="15sp"
+            android:layout_weight=".5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="@dimen/margin_10">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="15sp"
+            android:layout_weight=".5"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:textColor="@color/Black"
+            android:layout_marginRight="@dimen/margin_10">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_straight"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="Gents Majlies : "
+            android:textSize="15sp"
+            android:layout_weight=".5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="@dimen/margin_10">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="15sp"
+            android:layout_weight=".5"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:textColor="@color/Black"
+            android:layout_marginRight="@dimen/margin_10">
+
+        </TextView>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_bid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Bid"
+        android:textColor="@color/Black"
+        android:background="@color/Yellow">
+
+    </Button>
+
+
+</RelativeLayout>

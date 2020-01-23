@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">OnlineMaklarna</string>
+
+
+    <string name="welcome1_description">Lorem apsum is simply dummy text for printing</string>
+    <string name="welcome2_description">Lorem apsum is simply dummy text for printing</string>
+    <string name="welcome3_description">Lorem apsum is simply dummy text for printing</string>
+
+
+    <string name="welcome1_text">What is Lorem Ipsun?</string>
+    <string name="welcome2_text">What is Lorem Ipsun?</string>
+    <string name="welcome3_text">What is Lorem Ipsun?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

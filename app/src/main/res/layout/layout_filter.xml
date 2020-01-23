@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_8"
+        android:background="@color/DodgerBlue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:text="Filter"
+            android:padding="@dimen/padding_8"
+            android:drawablePadding="@dimen/margin_20"
+            android:drawableLeft="@drawable/ic_leftwhite">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_below="@+id/header_filter"
+        android:background="@color/White"
+        android:layout_above="@id/btn_applyfilter">
+
+        <LinearLayout
+            android:id="@+id/ly"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_Registrationfee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:hint="Area"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property Type :"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_ShareMinAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N0 of Rooms"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_SocialFundAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area sq ft"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_PeriodBeforeLoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Charges"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_contibutionBeforeLoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elevator"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_LoanInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balcony"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_LoanPenalty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Floor"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_Withdrawelpercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Public Transport"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_PublicTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centrally"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_Centrally"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tighly Cottage"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_TighlyCottage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store House"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_store_House"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Closet"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_8">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_scloset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                android:drawableRight="@drawable/ic_arrow_drop"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:textSize="15sp"
+                android:padding="@dimen/padding_10"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:maxLength="5"
+                android:background="@drawable/rectangel_shap_blkborder"
+                android:layout_marginTop="@dimen/margin_2">
+
+            </EditText>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_applyfilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="@dimen/margin_8"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Gray">
+
+    </Button>
+
+
+
+</RelativeLayout>

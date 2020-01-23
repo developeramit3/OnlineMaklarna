@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="Activity.Activity_SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            android:text="Sign In"
+            android:padding="@dimen/padding_8"
+            android:drawableLeft="@drawable/ic_leftblack">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/margin_200"
+        android:layout_height="@dimen/margin_150"
+        android:src="@drawable/logo"
+        android:elevation="@dimen/margin_2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_30">
+
+    </ImageView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_50">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:padding="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:background="@drawable/bg_lightblck_border">
+
+        <EditText
+            android:id="@+id/Et_mobilebankid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Bank ID"
+            android:textColor="@color/DodgerBlue"
+            android:drawableLeft="@drawable/ic_bank"
+            android:drawablePadding="@dimen/margin_10"
+            android:padding="@dimen/margin_3"
+            android:background="@null">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_blue"
+        android:text="Submit"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:textColor="@color/White">
+
+    </Button>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey"
+    tools:context="Fragments.Fragment_setting">
+
+    <LinearLayout
+        android:id="@+id/header_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_8"
+        android:background="@color/DodgerBlue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:text="Setting"
+            android:padding="@dimen/padding_8"
+            android:drawablePadding="@dimen/margin_20"
+            android:drawableLeft="@drawable/ic_leftwhite">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/header_settings"
+        android:layout_marginTop="@dimen/margin_8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persional Details"
+            android:textColor="@color/Black"
+            android:padding="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:textSize="15sp">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:textColor="@color/Black"
+            android:background="@drawable/bg_straight"
+            android:padding="@dimen/margin_10"
+            android:drawableRight="@drawable/ic_right"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/bg_straight">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Get Push Notification"
+            android:textColor="@color/Black"
+            android:layout_weight=".6"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchPadding="@dimen/margin_5">
+
+        </Switch>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:textColor="@color/Black"
+            android:drawableRight="@drawable/ic_right"
+            android:background="@drawable/bg_straight"
+            android:padding="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textSize="15sp">
+
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:textColor="@color/Black"
+            android:drawableRight="@drawable/ic_right"
+            android:background="@drawable/bg_straight"
+            android:padding="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textSize="15sp">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Bids"
+            android:textColor="@color/Black"
+            android:drawableRight="@drawable/ic_right"
+            android:background="@drawable/bg_straight"
+            android:padding="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textSize="15sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

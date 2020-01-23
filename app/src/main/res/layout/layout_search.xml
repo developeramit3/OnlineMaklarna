@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_8"
+        android:background="@color/DodgerBlue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:text="Search"
+            android:padding="@dimen/padding_8"
+            android:drawablePadding="@dimen/margin_20"
+            android:drawableLeft="@drawable/ic_leftwhite">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_search"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_8">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_Registrationfee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:textSize="15sp"
+        android:padding="@dimen/padding_10"
+        android:inputType="text"
+        android:maxLines="1"
+        android:drawableRight="@drawable/ic_arrow_drop"
+        android:hint="Area"
+        android:background="@drawable/rectangel_shap_blkborder"
+        android:layout_marginTop="@dimen/margin_2">
+
+    </EditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Type"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_8">
+
+        </TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/et_propertytype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:textSize="15sp"
+            android:padding="@dimen/padding_10"
+            android:drawableRight="@drawable/ic_arrow_drop"
+            android:hint="Select"
+            android:background="@drawable/rectangel_shap_blkborder"
+            android:layout_marginTop="@dimen/margin_2">
+
+        </AutoCompleteTextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Range"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_8">
+
+        </TextView>
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:max="100">
+
+        </SeekBar>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_groupsetup_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:padding="@dimen/margin_8"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Gray">
+
+    </Button>
+
+
+
+</RelativeLayout>
